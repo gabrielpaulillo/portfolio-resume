@@ -1,0 +1,98 @@
+/* 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    #688034 
+    #9f945b
+    #777777
+    #a6a6a5
+    #d5d5d5
+    #191b1a
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset não muito agressivo de alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d5d5d5;
+    box-sizing: border-box;
+    height: 100vh;
+    color: #191b1a;
+    font-family: 'Roboto', sans-serif;
+}
+
+a,
+h2,
+.main__content__title,
+.text-highlight
+{
+    color: #405005;
+}
+
+.urgente {
+    color: red;
+}
+
+.main {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main__content__title {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main__content__text {
+    color: #777777;
+    font-size: 24px;
+}
+
+.main__image {
+    width: 500px;
+}
+
+.main__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.main__links__subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main__links__link {
+    /* 
+    'ctrl + k' + 'ctrl + c' → cria comentário 
+    */
+    border: 3px solid #e9e9e9;
+    width: 380px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+}
