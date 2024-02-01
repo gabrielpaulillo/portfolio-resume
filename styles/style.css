@@ -1,0 +1,204 @@
+/* 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    #DCDCDD 
+    #C5C3C6
+    #46494C
+    #202020
+    #4C5C68
+    #1985A1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset não muito agressivo de alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202020;
+    box-sizing: border-box;
+    /* height: 100vh; */
+    color: #C5C3C6;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2,
+.main__content__title,
+.text-highlight
+{
+    color: #1985A1;
+}
+
+a {
+    color: #C5C3C6
+}
+
+img {
+    border-radius: 16px;
+}
+
+.menu {
+    padding: 2% 0% 0% 15%;
+}
+
+.menu__navbar {
+    display: flex;
+    gap: 80px;
+}
+
+.menu__navbar__link {
+    color: #1985A1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main__content__title {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main__content__text {
+    color: #4C5C68;
+    font-size: 24px;
+}
+
+.main__content__list {
+    padding: 24px;
+}
+
+.main__content__list__item {
+    color: #4C5C68;
+    font-size: 20px;
+}
+
+.main__image {
+    width: 500px;
+}
+
+.main__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.main__links__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main__links__link {
+    /* 
+    'ctrl + k' + 'ctrl + c' → cria comentário 
+    */
+    border: 3px solid #4C5C68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 380px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    font-weight: 600;
+}
+
+.main__links__link:hover {
+    background-color: #272727;
+}
+
+.main__links__svg {
+    fill: #1985A1;
+    width: 32px;
+}
+
+.footer {
+    color: #4C5C68;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Página 'resume.html' */
+.main__resume__div {
+    display: flex;
+    gap: 120px;
+}
+.main__experiences__subtitle {
+    color: #1985A1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.main__experiences__company {
+    color: #4C5C68;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main__experiences__list__item {
+    color: #C5C3C6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main__studies__subtitle {
+    color: #1985A1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.main__studies__list {
+    color: #C5C3C6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.studies-highlight {
+    color: #DCDCDD;
+    font-weight: 700;
+}
+
+.main__languages__subtitle {
+    color: #1985A1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.main__languages__list {
+    color: #C5C3C6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.languages__highlight {
+    color: #DCDCDD;
+    font-weight: 700;
+}
+
