@@ -1,15 +1,24 @@
 /* 
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-    #DCDCDD 
     #C5C3C6
-    #46494C
     #202020
     #4C5C68
     #1985A1
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --background-color: #202020;
+    --hightlight-color: #1985a1;
+    --less-important-color: #4c5c68;
+    --text-color: #bbb;
+    --hover-color: #272727;
+
+    --title-font: 'Poppins', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+}
 
 /* Reset não muito agressivo de alguns estilos */
 * {
@@ -18,26 +27,30 @@
 }
 
 body {
-    background-color: #202020;
+    background-color: var(--background-color);
     box-sizing: border-box;
     /* height: 100vh; */
-    color: #C5C3C6;
-    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-family: var(--text-font);
 }
 
 h2,
-.main__content__title,
-.text-highlight
+.main__content__title
 {
-    color: #1985A1;
+    color: var(--hightlight-color);
 }
 
 a {
-    color: #C5C3C6
+    color: var(--text-color);
 }
 
 img {
     border-radius: 16px;
+}
+
+.text-highlight {
+    color: var(--hightlight-color);
+    font-weight: 700;
 }
 
 .menu {
@@ -50,8 +63,8 @@ img {
 }
 
 .menu__navbar__link {
-    color: #1985A1;
-    font-family: 'Roboto', sans-serif;
+    color: var(--hightlight-color);
+    font-family: var(--text-font);
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
@@ -73,11 +86,11 @@ img {
 
 .main__content__title {
     font-size: 36px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--title-font);
 }
 
 .main__content__text {
-    color: #4C5C68;
+    color: var(--less-important-color);
     font-size: 24px;
 }
 
@@ -86,7 +99,7 @@ img {
 }
 
 .main__content__list__item {
-    color: #4C5C68;
+    color: var(--less-important-color);
     font-size: 20px;
 }
 
@@ -103,7 +116,7 @@ img {
 }
 
 .main__links__subtitle {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--title-font);
     font-size: 24px;
     font-weight: 400;
 }
@@ -112,7 +125,7 @@ img {
     /* 
     'ctrl + k' + 'ctrl + c' → cria comentário 
     */
-    border: 3px solid #4C5C68;
+    border: 3px solid var(--less-important-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,19 +139,27 @@ img {
 }
 
 .main__links__link:hover {
-    background-color: #272727;
+    background-color: var(--hover-color);
 }
 
 .main__links__svg {
-    fill: #1985A1;
+    fill: var(--hightlight-color);
     width: 32px;
 }
 
 .footer {
-    color: #4C5C68;
-    font-family: 'Roboto', sans-serif;
+    color: var(--less-important-color);
+    font-family: var(--text-font);
     text-align: center;
     padding: 24px;
+}
+
+/* Página 'about.html' */
+.main__content__text__aboutme {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: var(--text-font);
+    font-weight: 400;
 }
 
 /* Página 'resume.html' */
@@ -146,59 +167,36 @@ img {
     display: flex;
     gap: 120px;
 }
-.main__experiences__subtitle {
-    color: #1985A1;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+.main__resume__subtitle {
+    color: var(--less-important-color);
+    font-family: var(--title-font);
+    font-size: 32px;
 }
 
 .main__experiences__company {
-    color: #4C5C68;
-    font-family: 'Poppins', sans-serif;
+    color: var(--less-important-color);
+    font-family: var(--title-font);
     font-size: 18px;
     font-weight: 700;
 }
 
 .main__experiences__list__item {
-    color: #C5C3C6;
-    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-family: var(--text-font);
     font-size: 16px;
-    font-weight: 400;
-}
-
-.main__studies__subtitle {
-    color: #1985A1;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
 .main__studies__list {
-    color: #C5C3C6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.studies-highlight {
-    color: #DCDCDD;
-    font-weight: 700;
-}
-
-.main__languages__subtitle {
-    color: #1985A1;
-    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 20px;
     font-weight: 400;
 }
 
 .main__languages__list {
-    color: #C5C3C6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 20px;
     font-weight: 400;
 }
-
-.languages__highlight {
-    color: #DCDCDD;
-    font-weight: 700;
-}
-
