@@ -163,6 +163,10 @@ img {
     font-weight: 400;
 }
 
+.about__photo {
+    width: 25%;
+}
+
 /* Página 'resume.html' */
 .main__resume__div {
     display: flex;
