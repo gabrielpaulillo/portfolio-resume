@@ -65,7 +65,7 @@ img {
 .menu__navbar__link {
     color: var(--hightlight-color);
     font-family: var(--text-font);
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -75,36 +75,33 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .main__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .main__content__title {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-family: var(--title-font);
 }
 
 .main__content__text {
     color: var(--less-important-color);
-    font-size: 24px;
+    font-size: 1.75rem;
 }
 
 .main__content__list {
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .main__content__list__item {
     color: var(--less-important-color);
-    font-size: 20px;
-}
-
-.main__image {
-    width: 500px;
+    font-size: 1.25rem;
 }
 
 .main__links {
@@ -117,7 +114,7 @@ img {
 
 .main__links__subtitle {
     font-family: var(--title-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -130,11 +127,11 @@ img {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 380px;
+    width: 50%;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 24px;
-    padding: 21.5px 0;
+    font-size: 1.5rem;
+    padding: 1.125rem 0;
     font-weight: 600;
 }
 
@@ -147,17 +144,21 @@ img {
     width: 32px;
 }
 
+.main__image {
+    width: 50%;
+}
+
 .footer {
     color: var(--less-important-color);
     font-family: var(--text-font);
     text-align: center;
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 /* Página 'about.html' */
 .main__content__text__aboutme {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 1rem;
     font-family: var(--text-font);
     font-weight: 400;
 }
@@ -170,33 +171,53 @@ img {
 .main__resume__subtitle {
     color: var(--less-important-color);
     font-family: var(--title-font);
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .main__experiences__company {
     color: var(--less-important-color);
     font-family: var(--title-font);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .main__experiences__list__item {
     color: var(--text-color);
     font-family: var(--text-font);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .main__studies__list {
     color: var(--text-color);
     font-family: var(--text-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
 .main__languages__list {
     color: var(--text-color);
     font-family: var(--text-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .menu {
+        padding: 8%;
+    }
+
+    .menu__navbar {
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .main__content {
+        width: auto;
+    }
 }
